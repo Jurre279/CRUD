@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "livechat");
+$mysqli = new mysqli("localhost", "root", "", "chat");
 
 if(!empty($_POST['Naam'])&&!empty($_POST['bericht'])){
     $mysqli_stmt = $mysqli->prepare("INSERT INTO berichten (Naam, Bericht) VALUES (?, ?);");
