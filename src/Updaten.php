@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "livechat");
+$mysqli = new mysqli("localhost", "root", "", "chat");
 
     if (!empty($_GET["id"])) {
         $qry = "SELECT bericht, naam FROM berichten WHERE idberichten = ?";
