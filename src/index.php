@@ -7,7 +7,7 @@
     <title> Livechat - Database </title>
 </head>
 <?php
-$conn = new mysqli('localhost', 'root', '', 'livechat');
+$conn = new mysqli('localhost', 'root', '', 'chat');
 $stmt = "SELECT naam, bericht, idberichten FROM berichten";
 $result = $conn -> query($stmt);
     while ( $row = $result->fetch_assoc() ) {
