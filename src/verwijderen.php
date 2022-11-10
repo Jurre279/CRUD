@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "livechat");
+$mysqli = new mysqli("localhost", "root", "", "chat");
 
 $id = $_GET["id"];
 	if (!empty($_GET["id"])) {
